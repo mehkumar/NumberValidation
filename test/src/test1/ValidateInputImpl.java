@@ -1,15 +1,29 @@
 package test1;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
 
-public class ValidateInputImpl implements ValidateInput {
+public class ValidateInputImpl implements ValidateInput  {
 
 	@Override
 	public void validate(int input) {
-		HashMap<Integer,String> al=new HashMap();
+		HashMap<Integer,String> al=new HashMap<Integer,String>();
+		try {
+			if(input==0 || input<0)
+			{
+				throw new CustomValidation("Invalid Input");
+			}
+		}
+		catch(CustomValidation e)
+		{
+			System.out.println(e.getMessage());
+			System.out.println("Enter correct Input");
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println("Enter correct Input");
+		}
 		for(int i=1;i<=input;i++)
 		{
 			

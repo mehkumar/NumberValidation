@@ -11,6 +11,7 @@ public class UITest {
 	    int number=s1.nextInt();
 		ValidateInputImpl v=new ValidateInputImpl ();
 		v.validate(number);
+		s1.close();
 		
 	}
 
