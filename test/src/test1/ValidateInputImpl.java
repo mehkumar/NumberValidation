@@ -19,7 +19,6 @@ public class ValidateInputImpl implements ValidateInput  {
 			System.out.println(e.getMessage());
 			System.out.println("Enter correct Input");
 		}
-		
 		catch(Exception e)
 		{
 			System.out.println("Enter correct Input");
@@ -42,9 +41,6 @@ public class ValidateInputImpl implements ValidateInput  {
 			{
 				al.put(i,String.valueOf(i));	
 			}
-			
-			
-			
 		}
 		
 		for(Map.Entry<Integer, String> es:al.entrySet())	 
@@ -53,8 +49,5 @@ public class ValidateInputImpl implements ValidateInput  {
 		}
 	
 	}
-	
-
-	
 
 }
