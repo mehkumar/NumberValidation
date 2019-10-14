@@ -1,11 +1,8 @@
 package test1;
-
-
 import java.util.Scanner;
-
 public class UITest {
 	
-	public static void main(String[] args) {
+		public static void main(String[] args) {
 		int number=0;
 		Scanner s1 =new Scanner(System.in);
 		System.out.println("Enter a number");
@@ -24,3 +21,6 @@ public class UITest {
 				s1.close();	
 			
 		}
+	}
+
+}
